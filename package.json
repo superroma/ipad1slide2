@@ -1,0 +1,46 @@
+{
+  "name": "ipad1slide2",
+  "version": "0.20.1",
+  "description": "used as a template for new reSolve applications",
+  "private": true,
+  "scripts": {
+    "build": "babel-node ./run.js build",
+    "cloud": "babel-node ./run.js cloud",
+    "dev": "babel-node ./run.js dev",
+    "start": "babel-node ./run.js start",
+    "test": "jest --testMatch=**/test/unit/*.test.js --verbose",
+    "test:functional": "babel-node ./run.js test:functional"
+  },
+  "dependencies": {
+    "@babel/node": "7.0.0",
+    "@babel/polyfill": "7.0.0",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-bootstrap": "0.32.1",
+    "react-helmet": "5.2.0",
+    "redux": "4.0.1",
+    "resolve-redux": "0.20.1",
+    "resolve-scripts": "0.20.1",
+    "resolve-runtime": "0.20.1",
+    "resolve-storage-dynamo": "0.20.1",
+    "resolve-storage-lite": "0.20.1",
+    "resolve-readmodel-lite": "0.20.1",
+    "resolve-readmodel-mysql": "0.20.1",
+    "resolve-subscribe-mqtt": "0.20.1",
+    "resolve-subscribe-socket.io": "0.20.1",
+    "redux-devtools-extension": "2.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/plugin-proposal-class-properties": "7.0.0",
+    "@babel/plugin-proposal-export-default-from": "7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0",
+    "@babel/plugin-transform-runtime": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "react-test-renderer": "16.7.0",
+    "testcafe": "0.23.3"
+  }
+}
