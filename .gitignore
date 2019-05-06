@@ -62,7 +62,12 @@ typings/
 dist
 data
 
-event-storage.db
+default
+default-shm
+default-wal
+local-bus-broker.db
+local-bus-broker.db-journal
+
 package-lock.json
 code.zip
 static.zip
