@@ -1,22 +1,22 @@
 const devConfig = {
-  target: "local",
+  target: 'local',
   port: 3000,
-  polyfills: ["@babel/polyfill"],
-  mode: "development",
-  rootPath: "",
-  staticPath: "static",
-  staticDir: "static",
-  distDir: "dist",
+  polyfills: ['@babel/polyfill'],
+  mode: 'development',
+  rootPath: '',
+  staticPath: 'static',
+  staticDir: 'static',
+  distDir: 'dist',
   redux: {
-    enhancers: ["client/enhancers/redux-devtools.js"]
+    enhancers: ['client/enhancers/redux-devtools.js']
   },
   readModelConnectors: {
-    default: {
-      module: "resolve-readmodel-lite",
-      options: {
-        databaseFile: "data/read-models.db"
-      }
-    }
+    // default: {
+    //   module: "resolve-readmodel-lite",
+    //   options: {
+    //     databaseFile: "data/read-models.db"
+    //   }
+    // }
     /*
       default: {
         module: 'resolve-readmodel-mongo',
@@ -39,7 +39,7 @@ const devConfig = {
     */
   },
   snapshotAdapter: {
-    module: "resolve-snapshot-lite",
+    module: 'resolve-snapshot-lite',
     options: {
       // pathToFile: 'path/to/file',
       bucketSize: 100
@@ -59,9 +59,9 @@ const devConfig = {
       }
     }
   */ storageAdapter: {
-    module: "resolve-storage-lite",
+    module: 'resolve-storage-lite',
     options: {
-      pathToFile: "data/event-storage.db"
+      pathToFile: 'data/event-storage.db'
     }
   },
   /*
@@ -86,7 +86,7 @@ const devConfig = {
       }
     }
   */ subscribeAdapter: {
-    module: "resolve-subscribe-socket.io",
+    module: 'resolve-subscribe-socket.io',
     options: {}
   },
   /*
@@ -95,9 +95,9 @@ const devConfig = {
       options: {}
     }
   */ jwtCookie: {
-    name: "jwt",
+    name: 'jwt',
     maxAge: 31536000000
   }
-};
+}
 
-export default devConfig;
+export default devConfig

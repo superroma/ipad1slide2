@@ -9,16 +9,18 @@ import {
   reset
 } from 'resolve-scripts'
 
-import appConfig from './config.app'
+import baseAppConfig from './config.app'
 import cloudConfig from './config.cloud'
 import devConfig from './config.dev'
 import prodConfig from './config.prod'
 import testFunctionalConfig from './config.test_functional'
+import moduleAuth from './config.auth'
 
 const launchMode = process.argv[2]
 
 void (async () => {
   try {
+    const appConfig = merge(baseAppConfig, moduleAuth)
     switch (launchMode) {
       case 'dev': {
         const resolveConfig = merge(defaultResolveConfig, appConfig, devConfig)

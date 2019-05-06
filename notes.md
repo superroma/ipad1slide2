@@ -1,0 +1,11 @@
+- auth - no import in the example
+- auth - explain what strategy to return (it is not clear that you need to create passport strategy)
+- See the Hacker News example project for the full code. - no link to the example
+- for example, passport-google or passport-facebook. - there are no such modules.
+- why create strategy does not create strategy, but creates some weird object?
+- we need base url for various redirect config for auth, but it is hardcoded in the brewcomputer - is it a way to get it somehow?
+- Ctrl+C does not show clear command prompt
+- it is not clear what options to pass to the strategy (http://www.passportjs.org/docs/google/), but no callback function... It would be good to make it clear.
+- auth - no info in the docs what to write in the callback.
+- Error: The "default" read model connector is specified but no read model/saga uses it - why this is an error?
+- readModelConnectors: - why it is not an array?
