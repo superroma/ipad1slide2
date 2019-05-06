@@ -9,3 +9,4 @@
 - auth - no info in the docs what to write in the callback.
 - Error: The "default" read model connector is specified but no read model/saga uses it - why this is an error?
 - readModelConnectors: - why it is not an array?
+- it is not clear that `path: 'login'` in the auth module config means `/api/login`

@@ -5,12 +5,12 @@ const moduleAuth = resolveModuleAuth([
     name: 'google-strategy',
     createStrategy: 'auth/create-google-strategy.js',
     logoutRoute: {
-      path: 'auth/logout',
+      path: 'logout',
       method: 'GET'
     },
     routes: [
       {
-        path: 'auth/google',
+        path: 'login',
         method: 'GET',
         callback: 'auth/callback.js'
       }
