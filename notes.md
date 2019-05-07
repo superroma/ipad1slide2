@@ -10,3 +10,8 @@
 - Error: The "default" read model connector is specified but no read model/saga uses it - why this is an error?
 - readModelConnectors: - why it is not an array?
 - it is not clear that `path: 'login'` in the auth module config means `/api/login`
+- resolveLog is attached to global object - not good
+- logging is not standard
+- it is not clear why callback was not called. Especially with no logging and with resolve returning 200 for missing paths
+- callback method - document its parameters. they are `(req, ...passportVerifyParams)` and documented for instance for Google here http://www.passportjs.org/docs/google
+- config\* changes are not causing app to reload

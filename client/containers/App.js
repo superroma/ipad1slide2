@@ -10,7 +10,9 @@ const App = () => (
       favicon="/favicon.ico"
       css={['/bootstrap.min.css']}
     />
-    <h1 align="center">Hello, reSolve world!</h1>
+    <a href="/api/login">
+      <h1 align="center">Login</h1>
+    </a>
   </div>
 )
 
